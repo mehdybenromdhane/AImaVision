@@ -1,11 +1,8 @@
 "use client"
 import { BackgroundBeamsWithCollision } from '@/components/ui/background-beams-with-collision'
-import Image from 'next/image'
 import React, { useState } from 'react'
 import MainContainer from './_components/MainContainer'
-import ImageUpload from './_components/ImageUpload'
 import { GoogleGenerativeAI } from '@google/generative-ai'
-import { div } from 'framer-motion/client'
 
 function HomePage() {
 
@@ -20,12 +17,10 @@ function HomePage() {
 
     if (files){
       setFiles(files);
-      console.log(files);
     }
     
-  };
+  }; 
 
-  console.log(files[0]);
 
 
   const identifyImage = async (additionalPrompt: string = "") => {

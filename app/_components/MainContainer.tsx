@@ -1,11 +1,8 @@
 "use client";
-import React, { useState , ChangeEvent } from 'react'
-import ImageUpload from './ImageUpload'
+import React from 'react'
 import { ImageWrapper } from './ImageWrapper';
 import { FileUpload } from '@/components/ui/file-upload';
-import Image from 'next/image';
 import { BackgroundGradient } from '@/components/ui/background-gradient';
-import { GoogleGenerativeAI } from "@google/generative-ai";
 
 type IdentifyImage = () => void;
 

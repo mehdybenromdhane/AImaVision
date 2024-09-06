@@ -1,7 +1,6 @@
 "use client";
 import React from "react";
 import Image from "next/image";
-import { BackgroundGradient } from "@/components/ui/background-gradient";
 interface FileUploadProps {
   files: File[];
 }
